@@ -1,0 +1,43 @@
+body {
+    background-image:url(https://images7.alphacoders.com/630/630537.jpg);
+    background-size: auto 100vh;
+    font-family: Optima;
+    height: 100vh;
+  }
+  
+  .menu {
+    background-color: white;
+  }
+  
+  .menu li {
+    list-style: none;
+  }
+  
+  .menu ul {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  a {
+    color: brown;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  .site-title,
+  .site-subtitle {
+    color: brown;
+    text-align: center;
+  }
+  
+  .site-title {
+    font-size: 60px;
+  }
+  
+  .site-subtitle {
+    font-style: italic;
+    font-size: 40px;
+  }
