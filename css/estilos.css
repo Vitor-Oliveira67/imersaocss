@@ -1,12 +1,50 @@
+/* soft reset css*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
 body {
     background-image:url(https://images7.alphacoders.com/630/630537.jpg);
-    background-size: auto 100vh;
+    background-size: cover;
     font-family: Optima;
     height: 100vh;
+    font-size: 12px;
   }
+/* se a tela tiver pelo menos 400 px vai carregar esse estilo */
+  @media (min-width: 400px) {
+    body {
+      font-size: 14px
+    }
+}
+
+@media (min-width: 600px) {
+  body {
+    font-size: 18px
+  }
+}
+
+@media (min-width: 1200px) {
+  body {
+    font-size: 24px
+  }
+}
   
+header {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
   .menu {
     background-color: white;
+    position: fixed;
+    width: 100vw;
+    top: 0;
   }
   
   .menu li {
@@ -16,6 +54,11 @@ body {
   .menu ul {
     display: flex;
     justify-content: space-around;
+  }
+
+  .menu a {
+    display: block;
+    padding: 10px 20px;
   }
   
   a {
@@ -34,10 +77,23 @@ body {
   }
   
   .site-title {
-    font-size: 60px;
+    font-size: 4em;
   }
+
   
   .site-subtitle {
     font-style: italic;
-    font-size: 40px;
+    font-size: 2em;
+  }
+
+  .img-portfolio {
+    height: 150px;
+    width: 150px;
+  }
+
+  /* esse fui em que inventei*/
+  section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
   }
