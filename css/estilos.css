@@ -8,17 +8,18 @@
 
 
 body {
-    background-image:url(https://images7.alphacoders.com/630/630537.jpg);
+    background-image:url('../img/fundo_animado.gif');
     background-size: cover;
     font-family: Optima;
+    color: brown;
     height: 100vh;
     font-size: 12px;
   }
 /* se a tela tiver pelo menos 400 px vai carregar esse estilo */
-  @media (min-width: 400px) {
-    body {
-      font-size: 14px
-    }
+@media (min-width: 400px) {
+  body {
+    font-size: 14px
+  }
 }
 
 @media (min-width: 600px) {
@@ -78,22 +79,60 @@ header {
   
   .site-title {
     font-size: 4em;
+    font-family: 'Hammersmith One', sans-serif;
+    line-height: 1.2em;
   }
 
-  
   .site-subtitle {
     font-style: italic;
+    font-size: 1.5em;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  .portifolio {
+    padding: 2em;
+  }
+
+  .portifolio h2 {
+    font-family: 'Montserrat', sans-serif;
+    color: brown;
+    margin-bottom: 1.5em;
     font-size: 2em;
+  }
+
+  .portifolio .grid {
+    display: grid;
+    gap: 2em;
+  }
+
+  @media (min-width: 560px) {
+    .portifolio .grid {
+    grid-template-columns: 240px 240px;
+    }
+  }
+
+  @media (min-width: 880px) {
+    .portifolio .grid {
+    grid-template-columns: repeat(3,260px);
+    align-content: center;
+    justify-content: center;
+    height: calc(100vh - 8em - 48px);
+    }
+  }
+
+  .portifolio figure{
+    text-align: center;
   }
 
   .img-portfolio {
     height: 150px;
     width: 150px;
+    border-radius: 30%;
   }
 
-  /* esse fui em que inventei*/
-  section {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+  @media (min-width: 1200px) {
+    .img-portfolio {
+      height: 8em;
+      width: auto;
+    }
   }
