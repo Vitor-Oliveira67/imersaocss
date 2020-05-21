@@ -8,41 +8,109 @@
   <link rel="stylesheet" href="css/estilos.css">
   <link href="https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Montserrat&family=Roboto&display=swap" 
     rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/a9715141b2.js" 
+    crossorigin="anonymous"></script>
 </head>
 
 <body>
   <header>
     <nav class="menu">
-      <ul>
-        <li><a href="#">Sobre</a></li>
-        <li><a href="#">Projetos</a></li>
-        <li><a href="#">Contato</a></li>
+      <ul class="container">
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#portifolio">Projetos</a></li>
+        <li><a href="#contato">Contato</a></li>
       </ul>
     </nav>
-    <div>
+    <div class="titulo">
       <h1 class="site-title">Vitor Oliveira</h1>    
       <h2 class="site-subtitle">future web developer</h2>  
       <h3 class="site-subtitle">(maybe)</h3>  
     </div>
   </header>
-  <section class="portifolio">
+
+  <section class="sobre container" id="sobre">
+    <h2>Sobre</h2>
+
+    <figure class="avatar">
+        <img src="https://media-exp1.licdn.com/dms/image/C4E03AQFRiq5HZsAVEA/profile-displayphoto-shrink_400_400/0?e=1595462400&v=beta&t=0q3aoZWnRcPtaGwMeKUTBCMDQYjIuTMmBXIQbqLyDwk" 
+        alt="Vitor Oliveira">
+    </figure>
+
+<p>
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi quos, 
+    asperiores expedita consequatur neque ex pariatur explicabo voluptatem ipsa, 
+    vitae praesentium aperiam omnis, hic voluptates repellendus! Consequuntur blanditiis itaque rerum?
+    Laboriosam blanditiis, repellat inventore cumque laborum nulla aut doloremque!
+</p>
+
+<p>
+   Et veritatis praesentium quia eos hic fugit vel ea, cum at laboriosam 
+   dignissimos vitae. Cumque vero adipisci iste temporibus? Omnis, reprehenderit!
+
+</p>
+
+<p>
+   Itaque dolores voluptatem totam expedita, quisquam veritatis tempora 
+   iure dolorum reiciendis? Nisi sit exercitationem doloremque voluptate quasi 
+   molestiae nemo quam corporis distinctio laboriosam! Nostrum commodi unde quos 
+   obcaecati repellendus aperiam!
+</p>
+
+</section>
+    
+  <section class="portifolio container" id="portifolio">
     <h2>Projetos</h2>
 
     <div class="grid">
-    <figure>
-      <img class="img-portfolio" src="./img/mobiledesign.png" alt=">Mobile">
-      <figcaption>Mobile</figcaption>
-    </figure>
+
+  <div class="flip-card">
+    <div class="card">
+        <figure class="card-frente">
+          <img class="img-portfolio" src="./img/mobiledesign.png" alt=">Mobile">
+          <figcaption>Mobile</figcaption>
+        </figure>
+     <div class="card-verso">
+     
+      </div>
+    </div>
+  </div>
+  
     <figure>
       <img class="img-portfolio" src="./img/webdesign.png" alt="Web design">
       <figcaption>Web design</figcaption>
     </figure>
+
     <figure>
       <img class="img-portfolio" src="./img/zbrush.png" alt="Projetos pessoais">
       <figcaption>Projetos pessoais</figcaption>
     </figure>
+
     </div>
    
+  </section>
+
+  <section class="contato container" id="contato">
+  <h2>Contato</h2>
+
+    <div class="grid icons">
+    <a target="_blank" href="https://github.com/Vitor-Oliveira67">
+      <i class="fab fa-github-square"></i>
+    </a>
+    <a target="_blank" href="https://www.linkedin.com/in/vitor-oliveira-61a00457/">
+      <i class="fab fa-linkedin"></i>
+    </a>
+    <a target="_blank" href="https://www.instagram.com/bitorusan/">
+      <i class="fab fa-instagram-square"></i>
+    </a>
+
+    <a>
+      <a href="mailto: bitorusan@gmail.com">
+        <i class="fas fa-envelope-square"></i>
+      </a>
+    </a>
+    
+    </div>
   </section>
 </body>
 
